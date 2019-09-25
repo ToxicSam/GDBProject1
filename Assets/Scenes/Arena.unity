@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0040888633, g: 0.00022372292, b: 0.00000005721261,
+  m_IndirectSpecularColor: {r: 0.0040888605, g: 0.00022372269, b: 0.00000005721261,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -436,6 +436,11 @@ MonoBehaviour:
     m_EnemyGo: {fileID: 6884825251917979565, guid: cea991c1c5207cd40a63a9409eae8208,
       type: 3}
     m_TimeToNextSpawn: 1
+    m_NumberToSpawn: 0
+  - m_Name: BossEnemy
+    m_EnemyGo: {fileID: 4897566866056265239, guid: 7b9b14b07916b486dbcd9023fde5529f,
+      type: 3}
+    m_TimeToNextSpawn: 2
     m_NumberToSpawn: 0
 --- !u!4 &1664789962
 Transform:
@@ -963,6 +968,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: ca6a7dc64a2fb744e9ba669479a2089b, type: 2}
     - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
         type: 3}
+      propertyPath: m_Attacks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
       propertyPath: m_CameraTransform
       value: 
       objectReference: {fileID: 2127200028}
@@ -996,5 +1006,76 @@ PrefabInstance:
       propertyPath: m_HUD
       value: 
       objectReference: {fileID: 1893571499}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Name
+      value: MegaLaser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Button
+      value: Space
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_TriggerName
+      value: ShootMegaLaser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_AbilityGo
+      value: 
+      objectReference: {fileID: 8486783592351315732, guid: 1394129545acecd47a1fc7d35de81c8f,
+        type: 3}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Offset.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Offset.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Offset.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_WindUpTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_FrozenTime
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_HealthCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Color.g
+      value: 0.16078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287459497016399443, guid: c1f84c9d9296f414c9a531c030d8ac59,
+        type: 3}
+      propertyPath: m_Attacks.Array.data[2].m_Color.b
+      value: 0.16078432
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f84c9d9296f414c9a531c030d8ac59, type: 3}

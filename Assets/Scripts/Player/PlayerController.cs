@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    #region Health/Dying Methods
+    #region Health/Dying Speed up Methods
     public void DescreseHealth(float amount)
     {
         p_CurHealth -= amount;
@@ -171,6 +171,11 @@ public class PlayerController : MonoBehaviour
             p_CurHealth = m_MaxHealth;
         }
         m_HUD.UpdateHealth(1.0f * p_CurHealth / m_MaxHealth);
+    }
+
+    public void IncreaseSpeed(float amount)
+    {
+        m_Speed += amount;
     }
     #endregion
 
@@ -214,6 +219,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("HealthPill"))
         {
             IncreaseHealth(other.GetComponent<HealthPill>().HealthGain);
+            IncreaseSpeed(other.GetComponent<HealthPill>().SpeedGain);
             Destroy(other.gameObject);
         }
     }

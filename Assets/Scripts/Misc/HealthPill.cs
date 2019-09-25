@@ -15,5 +15,16 @@ public class HealthPill : MonoBehaviour
             return m_HealthGain;
         }
     }
+
+    [SerializeField]
+    [Tooltip("The amoount of Speed that this pill gives to player")]
+    private float m_SpeedGain;
+    public float SpeedGain
+    {
+        get
+        {
+            return m_SpeedGain;
+        }
+    }
     #endregion
 }
